@@ -13,11 +13,15 @@ import Shorts_Page from './Pages/Pants/Shorts'
 import Aceries_Page from './Pages/Accessories'
 import Detail_Page from './Pages/Detail_Page'
 import AllProds_Page from './Pages/All_Prods_Page'
+import Login_Page from './Pages/Accounts_Page/Login_Page'
+import Register_Page from './Pages/Accounts_Page/Register_Page'
+import Admin_Page from './Pages/Admin_Page'
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
+        {/* USER */}
         <Route path='/' element={<Home />}></Route>
         <Route path='/FabFourFashion_AoPolo' element={<AoPolo_Page />}></Route>
         <Route path='/FabFourFashion_AoKhoac' element={<AoKhoac_Page />}></Route>
@@ -30,6 +34,11 @@ function App() {
         <Route path='/FabFourFashion_Accessories' element={<Aceries_Page />}></Route>
         <Route path='/FabFourFashion_Detail' element={<Detail_Page/>}></Route>
         <Route path='/FabFourFashion_AllProducts' element={<AllProds_Page/>}></Route>
+        <Route path='/FabFourFashion_Login' element={<Login_Page/>}></Route>
+        <Route path='/FabFourFashion_Register' element={<Register_Page/>}></Route>
+
+        {/* ADMIN */}
+        <Route path='/FabFourFashion_Admin' element={<Admin_Page/>}></Route>
       </Routes>
     </BrowserRouter>
   )
