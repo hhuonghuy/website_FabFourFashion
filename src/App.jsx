@@ -16,6 +16,8 @@ import AllProds_Page from './Pages/All_Prods_Page'
 import Login_Page from './Pages/Accounts_Page/Login_Page'
 import Register_Page from './Pages/Accounts_Page/Register_Page'
 import Admin_Page from './Pages/Admin_Page'
+import Cart_Page from './Pages/Cart_Page'
+import CartSuccess_Page from './Pages/CartSuccess_Page'
 
 function App() {
   return (
@@ -36,6 +38,8 @@ function App() {
         <Route path='/FabFourFashion_AllProducts' element={<AllProds_Page/>}></Route>
         <Route path='/FabFourFashion_Login' element={<Login_Page/>}></Route>
         <Route path='/FabFourFashion_Register' element={<Register_Page/>}></Route>
+        <Route path='/FabFourFashion_Cart' element={<Cart_Page/>}></Route>
+        <Route path='/FabFourFashion_CartSuccess' element={<CartSuccess_Page/>}></Route>
 
         {/* ADMIN */}
         <Route path='/FabFourFashion_Admin' element={<Admin_Page/>}></Route>

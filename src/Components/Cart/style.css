@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container-fluid li a:hover{
+    color: #905824;
+    font-size: 15px;
+}
+.container-fluid li a{
+    color: white;
+}
+#sanpham a h4:hover{
+    color: #f97e6c;
+}
+#sanpham a h4{
+    color: black;
+}
